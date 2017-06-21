@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Application</title>
+    <style>
+        body {
+            background-image: url("images/image.gif");
+            height:500px ;
+            width:1000px;
+        }
+        .border {border-style: solid;}
+    </style>
+</head>
+<body>
+<div class="border">
+<h1>
+    Welcome to UMKC
+</h1>
+<h2>
+    Welcome to <span style="color:blue">Programming to Web based app</span>
+</h2>
+<h3>
+    Inclass exercise 1
+</h3>
+</div>
+<h4>
+    build a html page with headings, paragraph, link to any of your social networking,
+    include image, use div and span elements, unordered list, ordered list
+</h4>
+<p>
+   Tools needed for this Course are:
+<ul style="list-style-type:disc">
+    <li>Windows OS</li>
+    <li>WebStorm</li>
+    <li>Browser</li>
+</ul>
+Programming Languages used are
+    <ol>
+        <li>HTML 5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Jquery</li>
+        <li>Node.js</li>
+    </ol>
+
+</p>
+
+<div>
+    <a href="https://www.linkedin.com/in/madhuri-gumma-65b8694a/">LinkedIn</a>
+</div>
+
+</body>
+</html>
