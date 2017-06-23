@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My Responsive Website</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!-- fixed navigation bar -->
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">My website</a>
+        </div>
+        <div class="collapse navbar-collapse" id="b-menu-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Your Profile</a></li>
+                <li><a href="#">Billing Address</a></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div id="slider" class="carousel slide" data-ride="carousel">
+      <!-- controls -->
+      <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- slides -->
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome to UMKC Courses</h1>
+
+              <p><a class="btn btn-lg btn-default" href="#" role="button">Know More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>News Feed</h1>
+
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Continue</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Research Summary</h1>
+
+              <p><a class="btn btn-lg btn-warning" href="#" role="button">Continue</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- left-right controls -->
+      <a class="left carousel-control" href="#slider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#slider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+    <!-- main container -->
+    <div class="container">
+
+      <!-- second menu bar -->
+      <nav class="navbar navbar-default navbar-static">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#b-menu-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- submenu elements for #b-menu-2 -->
+        <div class="collapse navbar-collapse" id="b-menu-2">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> Other <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Courses Offered</a></li>
+                <li><a href="#">Fee Structure</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Library Services</a></li>
+                <li><a href="#">Gym Facility</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </nav>
+
+      <!-- 2-column layout -->
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+
+          <!-- jumbotron -->
+          <div class="jumbotron">
+            <h1>Course Description</h1>
+            <p>You can sign up to register in the courses and know more about them</p>
+            <p><a role="button" href="#" class="btn btn-lg btn-success">Sign up today</a></p>
+          </div>
+
+          <div class="row">
+
+            <!-- column 1 -->
+            <div class="col-sm-6">
+
+              <!-- box 1 -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Mobile App Development</h3>
+                </div>
+                <div class="panel-body">
+                  <p>This Course gives you an idea about development of Android app</p>
+                  <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                </div>
+              </div>
+
+              <!-- box 2 -->
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Web Programming</h3>
+                </div>
+                <div class="panel-body">
+                  <p>This is Web Programming Course. In this class Responsive Web designing is taught</p>
+                  <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                </div>
+              </div>
+            </div> <!-- /column 1 -->
+
+            <!-- column 2 -->
+            <div class="col-sm-6">
+
+              <!-- box 3 -->
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Python Programming</h3>
+                </div>
+                <div class="panel-body">
+                  <p>This Python Programming class. In this class If-else and loop concepts are taught.</p>
+                  <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                </div>
+              </div>
+
+              <!-- box 4 -->
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Big Data Analytics</h3>
+                </div>
+                <div class="panel-body">
+                  <p>This Big Data Analytics course. In this course Big Data related topics are taught like Tensor Flow etc.</p>
+                  <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group" role="navigation">
+            <a href="#" class="list-group-item">Karthik Reddy</a>
+            <a href="#" class="list-group-item">Someih</a>
+            <a href="#" class="list-group-item active">Rashmi Tripathi</a>
+            <a href="#" class="list-group-item">Vijaya Kumari</a>
+            <a href="#" class="list-group-item">Dr. Lee</a>
+          </div>
+
+
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Course Enrollment</h3>
+            </div>
+            <div class="panel-body">
+              <form role="form">
+                <div class="form-group">
+                  <label for="emailField">Email address</label>
+                  <input type="email" class="form-control" id="emailField" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="selectField">Subject</label>
+                  <select class="form-control" id="selectField">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">About Professor</h3>
+            </div>
+            <div class="panel-body">
+              <p></p>
+              <p><a class="btn btn-default right" href="#" role="button">Continue &raquo;</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <footer>
+        <nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+        <p class="navbar-text">&copy Copyright 2013</p>
+        </nav>
+      </footer>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
