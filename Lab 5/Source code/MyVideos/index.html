@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "videoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>MyLovedVideos</title>
+</head>
+<body>
+<div ng-controller="trackCtrl">
+    <div id="trackDisplay">
+        <input type="text" id="txt_audVid" placeholder="Enter audio or a video">
+        <input type="text" id="txt_searchFilter" placeholder="Enter the name of audio or video">
+        <button id="btn_getTracks" ng-click="getTracks()">Get Tracks</button>
+    </div>
+</div>
+<div id="div_TrackList">
+    <h2>Top five picks from Free sound API</h2>
+    <ul>
+        <li ng-repeat="track in trackList">
+            <a href="">{{track.name}}</a>
+        </li>
+    </ul>
+
+</div>
+<div ng-controller="videoCtrl">
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+<script src="script.js"></script>
+</body>
+</html>

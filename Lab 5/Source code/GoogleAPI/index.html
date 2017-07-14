@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Google API</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="//rawgit.com/angular-ui/angular-google-maps/2.1.5/dist/angular-google-maps.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyD_0CUZYY2Mm39BC4_S3W6zD9Qggsi829U&libraries=places"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <script src="api.js"></script>
+
+    <style>
+        .angular-google-map-container {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div ng-app="GoogleApp" ng-controller="PlaceCtrl">
+
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
+
+    <div ng-controller="WeatherCtrl">
+        <div>Google Places Autocomplte integration in Angular</div>
+        <div>To Test, start typing the name of any Indian city</div>
+        <div>selection is: {{chosenPlace}}</div>
+        <div><input ng-model="chosenPlace" googleplace/></div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
