@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    text {
+        font: 11px calibiri;
+    }
+
+</style>
+<body>
+<script src="//d3js.org/d3.v4.js"></script>
+<script>
+
+    var diameter_value = 960,
+        format = d3.format(",d"),
+        color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+    var bubble_render = d3.pack()
+        .size([diameter_value, diameter_value])
+        .padding(1.5);
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", diameter_value)
+        .attr("height", diameter_value)
+        .attr("class", "bubble");
+
+    d3.json("twitter.json", function(error, data) {
+        if (error) throw error;
+
+        var root_node = d3.hierarchy(classes(data))
+            .sum(function(data) { return data.value; })
+            .sort(function(x, y) { return x.value - y.value; });
+
+        bubble_render(root_node);
+        var node_start = svg.selectAll(".node")
+            .data(root_node.children)
+            .enter().append("g")
+            .attr("class", "node")
+            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+        node_start.append("title")
+            .text(function(d) { return d.data.className + ": " + format(d.value); });
+
+        node_start.append("circle")
+            .attr("r", function(d) { return d.r; })
+            .style("fill", function(d) {
+                return color(d.data.packageName);
+            });
+
+        node_start.append("text")
+            .attr("dy", ".3em")
+            .style("text-anchor", "middle")
+            .text(function(d) { return d.data.className.substring(0, d.r / 3); });
+    });
+
+    function classes(root_node) {
+        var classes = [];
+
+        function recurse(name, node_start) {
+            if (node_start.children) node_start.children.forEach(function(child) { recurse(node_start.name, child); });
+            else classes.push({packageName: name, className: node_start.name, value: node_start.tweet_volume});
+        }
+
+        recurse(null, root_node);
+        return {children: classes};
+    }
+
+    d3.select(self.frameElement).style("height", diameter_value + "px");
+
+</script>
