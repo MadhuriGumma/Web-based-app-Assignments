@@ -6,3 +6,9 @@
 4. ICE3 - https://github.com/MadhuriGumma/Web-based-app-Assignments/wiki/InClass-Ex-3-Description
 5. ICE2 - https://github.com/MadhuriGumma/Web-based-app-Assignments/wiki/InClass-Ex-2-Description
 6. https://github.com/MadhuriGumma/Web-based-app-Assignments/wiki/Lab-4-Description - Lab 4 Description
+
+7. https://github.com/MadhuriGumma/Web-based-app-Assignments/wiki/Lab-5-Description - Lab 5 Description
+
+8. https://github.com/MadhuriGumma/Web-based-app-Assignments/wiki/Lab-6-Description - Lab 6 Description
+
+9. https://github.com/MadhuriGumma/Web-based-app-Assignments/wiki/Lab-7-Description - Lab 7 Description
